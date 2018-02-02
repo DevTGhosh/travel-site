@@ -1,0 +1,11 @@
+$mainBlue: #2f5572;
+$mainOrange: #d59541;
+
+/* breakpoints */
+
+/* 530px/16px = 33.125 */
+$bp-small: 33.125em; 
+/* 800px/16px = 50 */
+$bp-medium: 50em;
+/* 1200px/16px = 75 */
+$bp-large: 75em;

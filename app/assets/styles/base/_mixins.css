@@ -1,0 +1,25 @@
+@define-mixin atSmall {
+    @media (min-width: $bp-small) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: $bp-medium) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: $bp-large) {
+        @mixin-content;
+    }
+}
+
+@define-mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
