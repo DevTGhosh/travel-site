@@ -4,8 +4,17 @@
     &--gutters {
         margin-right: -6.5rem;
     }
+
+    &--gutters-large {
+        margin-right: -10rem;
+    }   
+
     &--gutters > div{
         padding-right: 6.5rem;
+    }
+
+    &--gutters-large > div {
+        padding-right: 10rem;
     }
 
     &__b-margin-until-medium {
@@ -24,6 +33,11 @@
             &--larger {
                 width: 37%;
             }
+        }
+
+        &__medium-6 {
+            float: left;
+            width: 50%;
         }
     
         &__medium-8{
