@@ -7,5 +7,5 @@ $mainOrange: #d59541;
 $bp-small: 33.125em; 
 /* 800px/16px = 50 */
 $bp-medium: 50em;
-/* 1200px/16px = 75 */
-$bp-large: 75em;
+/* 1010px/16px = 63.125 */
+$bp-large: 63.125em;

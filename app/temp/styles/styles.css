@@ -456,7 +456,7 @@ template {
 
 /* 800px/16px = 50 */
 
-/* 1200px/16px = 75 */
+/* 1010px/16px = 63.125 */
 
 *,
 *::before,
@@ -619,6 +619,19 @@ a {
     }
     }
 
+.wrapper--no-padding-until-large {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+@media (min-width: 63.125em) {
+
+.wrapper--no-padding-until-large {
+            padding-left: 1.8rem;
+            padding-right: 1.8rem
+    }
+    }
+
 .page-section {
     padding: 1.9rem 0;
 }
@@ -641,6 +654,17 @@ a {
     }
     }
 
+.page-section--no-b-padding-until-large {
+        padding-bottom: 0;        
+    }
+
+@media (min-width: 63.125em) {
+
+.page-section--no-b-padding-until-large {
+            padding-bottom: 7.2rem        
+    }
+    }
+
 .page-section--blue {
         background-color: #2f5572;
         color: #fff;
@@ -651,7 +675,7 @@ a {
         background-color: #e0e6ef;
     }
 
-@media (min-width: 50em) {
+@media (min-width: 63.125em) {
 
 .page-section--testimonials {
             background: url('../../assets/images/testimonials-bg.jpg')  top center no-repeat;
@@ -780,6 +804,36 @@ a {
             }
     }
 
+@media (min-width: 63.125em) {
+        .row__b-margin-until-large {
+            margin-bottom: 0;
+        }
+        
+        .row__large-4 {
+            float: left;
+            width: 33.333%;
+        }
+
+            .row__large-4--larger {
+                width: 37%;
+            }
+
+        .row__large-6 {
+            float: left;
+            width: 50%;
+        }
+    
+        .row__large-8{
+            
+            float: left;
+            width: 66.666%;
+        }
+
+            .row__large-8--smaller {
+                width: 63%;
+            }
+    }
+
 /* Using flexbox for equal height  */
 
 @media (min-width: 50em) {
@@ -792,6 +846,22 @@ a {
     }
 
 .row--equal-height-at-medium> div {
+            float: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+@media (min-width: 63.125em) {
+
+.row--equal-height-at-large {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+    }
+    }
+
+.row--equal-height-at-large> div {
             float: none;
             display: -webkit-box;
             display: -ms-flexbox;
