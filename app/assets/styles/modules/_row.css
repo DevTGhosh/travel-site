@@ -1,6 +1,10 @@
 .row {
     @mixin clearfix;
     
+    &--top-padding {
+        padding-top: 8rem;
+    }
+
     &--gutters {
         margin-right: -6.5rem;
     }
@@ -9,12 +13,19 @@
         margin-right: -10rem;
     }   
 
+    &--gutters-small {
+        margin-right: -4.5rem;
+    }
+
     &--gutters > div{
         padding-right: 6.5rem;
     }
 
+    &--gutters-small > div {
+        padding-right: 4.5rem;
+    }
+
     &--gutters-large > div {
-        padding-right: 10rem;
     }
 
     &__b-margin-until-medium {
@@ -48,6 +59,18 @@
             &--smaller {
                 width: 63%;
             }
+        }
+    }
+
+    /* Using flexbox for equal height  */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+
+        &> div {
+            float: none;
+            display: flex;
         }
     }
 }
