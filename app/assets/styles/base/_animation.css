@@ -1,0 +1,71 @@
+@keyframes animate-line-1 {
+    0%{
+      transform:translate3d(0,0,0) rotate(0deg);
+    }
+    50%{
+      transform: translate3d(0,$line-offset-y,0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(0,$line-offset-y,0) rotate(45deg);
+    }
+  }
+  
+  @keyframes animate-line-2 {
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+    100%{
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animate-line-3 {
+    0%{
+      transform:translate3d(0,0,0) rotate(0deg);
+    }
+    50%{
+      transform: translate3d(0,-$line-offset-y,0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(0,-$line-offset-y,0) rotate(135deg);
+    }
+  }
+  
+  @keyframes animate-line-1-reverse {
+    0% {
+      transform: translate3d(0,$line-offset-y,0) rotate(45deg);
+    }
+    50%{
+      transform: translate3d(0,$line-offset-y,0) rotate(0deg);
+    }
+    100%{
+      transform:translate3d(0,0,0) rotate(0deg);
+    }
+  
+  }
+  
+  @keyframes animate-line-2-reverse {
+    0%{
+      transform: scale(0);
+      opacity: 0;
+    }
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }  
+  }
+  
+  @keyframes animate-line-3-reverse {
+    0% {
+      transform: translate3d(0,-$line-offset-y,0) rotate(135deg);
+    }
+    50%{
+      transform: translate3d(0,-$line-offset-y,0) rotate(0deg);
+    }
+    100%{
+      transform:translate3d(0,0,0) rotate(0deg);
+    }
+    
+  }

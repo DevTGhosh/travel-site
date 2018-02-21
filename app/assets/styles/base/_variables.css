@@ -9,3 +9,10 @@ $bp-small: 33.125em;
 $bp-medium: 50em;
 /* 1010px/16px = 63.125 */
 $bp-large: 63.125em;
+
+/* menu icon line heights */
+
+$line-height: 0.2rem; 
+
+$line-offset-y: 0.9rem;
+/* offset value to make the line appear at center */

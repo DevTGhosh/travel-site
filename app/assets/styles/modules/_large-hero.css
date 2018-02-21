@@ -1,6 +1,7 @@
 .large-hero {
     position: relative;
     border-bottom: 1rem solid $mainBlue;
+    
 
     &__image{
         display: block;
@@ -13,6 +14,11 @@
         left: 0;
         width: 100%;
         text-align: center;
+        padding-top: 8.8rem;
+
+        @mixin atMedium {
+            padding-top: 6rem;
+        }
     }
 
     &__title {
