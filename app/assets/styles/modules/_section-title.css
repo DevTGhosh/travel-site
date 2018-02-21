@@ -31,4 +31,9 @@
     &--blue {
         color: $mainBlue;
     }
+
+    &--less-margin {
+        margin-bottom: 2.1rem;
+        margin-top: 0;
+    }
 }
