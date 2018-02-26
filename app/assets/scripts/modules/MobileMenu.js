@@ -9,7 +9,7 @@ class MobileMenu {
     }
 
     events() {
-        this.menuIcon.click(this.toggleMenu.bind(this));
+        this.menuIcon.click(this.toggleMenu.bind(this)); //binds this in toggleMenu to .site-header__menu-content
     }
 
     toggleMenu() {
@@ -17,7 +17,7 @@ class MobileMenu {
         this.siteHeader.toggleClass("site-header--is-expanded");
 
         if(this.menuIcon.hasClass('active')){
-            this.menuIcon.toggleClass('reverse')
+            this.menuIcon.toggleClass('reverse');
         }
         else {
             this.menuIcon.toggleClass('active');
