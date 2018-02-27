@@ -7,7 +7,7 @@ svg2png = require('gulp-svg2png');
 let config = {
     shape: {
         spacing: {
-            padding: 1
+          padding: 2
         }
     },
     mode: {

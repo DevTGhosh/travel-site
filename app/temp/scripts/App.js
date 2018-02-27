@@ -11266,7 +11266,7 @@ var MobileMenu = function () {
     _createClass(MobileMenu, [{
         key: "events",
         value: function events() {
-            this.menuIcon.click(this.toggleMenu.bind(this));
+            this.menuIcon.click(this.toggleMenu.bind(this)); //binds this in toggleMenu to .site-header__menu-content
         }
     }, {
         key: "toggleMenu",

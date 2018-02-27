@@ -94,7 +94,7 @@
 
 
     /* Using flexbox for equal height  */
-   .flexbox  &--equal-height-at-medium {
+   .flexbox &--equal-height-at-medium {
         @mixin atMedium {
             display: flex;
         }
